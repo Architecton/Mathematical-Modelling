@@ -1,4 +1,4 @@
-% function [k] = slopes(s, t, F, dF, G, dG)
+% function [slopes] = make_slopes(F, dF, G, dG)
 %
 % The function returns the vector function slopes that returns the slopes 
 % of the vector r between F(t) and G(s) and the tangent lines to the curves at F(t) and G(s).
