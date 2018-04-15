@@ -9,7 +9,7 @@ function [params, num_it] = newton(slopes, Jslopes, tolerance, max_it, params_0)
   % iterate max_it times
   for it = 1:max_it
     % Newton iteration step
-    params = params - pinv(J(params(1), params(2)))*slopes(params(1), params(2))
+    params = params - pinv(Jslopes(params(1), params(2)))*slopes(params(1), params(2));
     % if difference between old and new parameters is small enough
     if norm(params - params_0) < tolerance
       break

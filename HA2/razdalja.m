@@ -12,15 +12,15 @@
 
 function [d, t, s] = razdalja(F, G, t0, s0)
   % Compute function handles.
-  F = @(t) F(t)
-  dF = @(t) [~, res] = F(t)
-  ddF = @(t) [~, ~, res] = F(t)
-  G = @(s) G(s)
-  dG = @(s) [~, res] = G(s)
-  ddG = @(s) [~, ~, res] = G(s)
+  F = @(t) F(t);
+  dF = @(t) [~, res] = F(t);
+  ddF = @(t) [~, ~, res] = F(t);
+  G = @(s) G(s);
+  dG = @(s) [~, res] = G(s);
+  ddG = @(s) [~, ~, res] = G(s);
 
   % Compute the slopes function
-  slopes = make_slopes(F, dF, G, dG)
+  slopes = make_slopes(F, dF, G, dG);
 
   % Compute the Jacobian matrix
   Jslopes = make_jacobian(F, dF, ddF, G, dG, ddG);
@@ -29,13 +29,13 @@ function [d, t, s] = razdalja(F, G, t0, s0)
   params_0 = [t0; s0];
   
   % Find the parameters at which the function value is minimum
-  params = newton(slopes, Jslopes, tolerance, 1000000, params_0)
+  params = newton(slopes, Jslopes, 1.0E-13 , 1000000, params_0);
   
   % set computed parameters as function return values
-  t = params(1)
-  s = params(2)
+  t = params(1);
+  s = params(2);
   
   % Compute distance between curves four parameters returned by the newton method.
-  d = norm(F(params(1)) - G(params(2));
+  d = norm(F(t) - G(s));
   
 endfunction  
