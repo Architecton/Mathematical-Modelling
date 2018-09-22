@@ -1,0 +1,1 @@
+convert -delay 50 -loop 0 fig{0..20}.jpg output.gif

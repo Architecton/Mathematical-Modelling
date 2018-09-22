@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Problem}{2}
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{2}
+\contentsline {section}{\numberline {2}Solution}{2}
+\contentsline {subsection}{\numberline {2.1}Finding the Minimum Distance between the Curves}{2}
+\contentsline {subsection}{\numberline {2.2}Approximating the Root of the slopes Function}{3}
+\contentsline {subsection}{\numberline {2.3}Generalizing the Problem to include Parametric Surfaces}{4}
+\contentsline {subsection}{\numberline {2.4}Generalizing the Problem to Arbitrary Dimensions}{5}
+\contentsline {section}{\numberline {3}Writing the MATLAB/Octave Code}{7}
+\contentsline {subsection}{\numberline {3.1}Generalization to Include Parametric Surfaces}{9}
+\contentsline {subsection}{\numberline {3.2}A Simple Test Case}{10}

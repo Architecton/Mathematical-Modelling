@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Problem Statement}{2}
+\contentsline {subsection}{\numberline {1.1}MATLAB/Octave Implementation Goals}{2}
+\contentsline {section}{\numberline {2}Interpolating the Unit Square}{3}
+\contentsline {section}{\numberline {3}Some Properties of the Constructed Unit Square}{6}
+\contentsline {subsection}{\numberline {3.1}Showing that the Weights Sum to 1}{6}
+\contentsline {subsection}{\numberline {3.2}Showing that the Values of the Interpolating Function and its Partial Derivatives at a Given Vertex Depend only on the Data that Refers to that Particular Unit Square Vertex}{7}
+\contentsline {subsection}{\numberline {3.3}Showing that the Values of the Interpolating Function and its Partial Derivatives at a Given Unit Square Edge Depend only on the Data that Refers to that Particular Edge}{8}
+\contentsline {subsection}{\numberline {3.4}Computing the Values of the Interpolating Function and its Partial Derivatives at the Vertices of the Unit Square}{9}
+\contentsline {section}{\numberline {4}MATLAB/Octave Implementations}{10}
+\contentsline {subsection}{\numberline {4.1}MATLAB/Octave Implementation - interpolationFunction}{10}
+\contentsline {subsection}{\numberline {4.2}MATLAB/Octave Implementation - interpolation}{14}
+\contentsline {section}{\numberline {5}MATLAB/Octave Implementation - Results and Plots}{16}
+\contentsline {subsection}{\numberline {5.1}interpolationFunction}{16}
+\contentsline {subsection}{\numberline {5.2}interpolation}{18}
